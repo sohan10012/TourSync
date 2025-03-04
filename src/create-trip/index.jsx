@@ -182,7 +182,7 @@ function CreateTrip() {
 
       <div className="mt-20">
         <h2 className="text-3xl my-3 font-bold mb-8">What is your budget?</h2>
-        <div className="cursor-pointer grid grid-cols-3 gap-7 mt-5">
+        <div className="cursor-pointer grid grid-cols-2 md:grid-cols-3 gap-7 mt-5">
           {SelectBudgetOptions.map((item, index) => (
             <div
               key={index}
