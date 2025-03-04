@@ -1,6 +1,6 @@
 # AI-Powered Web Trip Planner
 
-## [Live Demo](your-hosted-url-here)
+## [Live Demo]([your-hosted-url-here](https://tour-sync.vercel.app/my-trips))
 
 ## Table of Contents
 
