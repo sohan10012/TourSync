@@ -60,8 +60,8 @@ function CreateTrip() {
     }
     if (!formData.noofDays) {
       errors.noofDays = "Number of days is required";
-    } else if (formData.noofDays > 10) {
-      errors.noofDays = "Number of days cannot be more than 10";
+    } else if (formData.noofDays > 6) {
+      errors.noofDays = "Number of days cannot be more than 6";
     }
     if (!formData.budget) {
       errors.budget = "Budget is required";
@@ -168,10 +168,10 @@ function CreateTrip() {
             required
             className="py-5  border-gray-400 hover:shadow-md focus:white focus:accent-white"
             type="number"
-            placeholder="Ex.3"
+            placeholder="Max 6 days (Ex:5)"
             onChange={(e) => {
               handleInputChange("noofDays", e.target.value);
-              setFormErrors((prev) => ({ ...prev, noofDays: "" })); // Clear error on change
+              setFormErrors((prev) => ({ ...prev, noofDays: "" })); 
             }}
           />
           {formErrors.noofDays && (
