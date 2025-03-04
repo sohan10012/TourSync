@@ -76,7 +76,7 @@ function CreateTrip() {
       return;
     }
 
-    if (formData?.noofDays > 10) {
+    if (formData?.noofDays > 6) {
       return;
     }
 
@@ -191,7 +191,7 @@ function CreateTrip() {
                 setFormErrors((prev) => ({ ...prev, budget: "" })); // Clear error on change
               }}
               className={`bg-gray-100 p-4 border rounded-lg hover:shadow-lg
-              ${formData?.budget == item.title && "shadow-lg border-cyan-700"}`}
+              ${formData?.budget == item.title && "shadow-lg border-2 border-cyan-600"}`}
             >
               <h2 className="text-3xl">{item.icon}</h2>
               <h2 className="py-2 font-bold text-lg">{item.title}</h2>
@@ -210,7 +210,7 @@ function CreateTrip() {
         <h2 className="text-3xl my-3 font-bold mb-8">
           Who do you plan on travelling with? 👫
         </h2>
-        <div className="cursor-pointer grid grid-cols-3 gap-7 mt-5">
+        <div className="cursor-pointer grid grid-cols-2 md:grid-cols-3 gap-7 mt-5">
           {SelectTravelesList.map((item, index) => (
             <div
               key={index}
@@ -221,7 +221,7 @@ function CreateTrip() {
               className={`bg-gray-100 p-4 border rounded-lg hover:shadow-lg
               ${
                 formData?.traveller == item.people &&
-                "shadow-lg border-cyan-700"
+                "shadow-lg border-2 border-cyan-600"
               }`}
             >
               <h2 className="text-3xl">{item.icon}</h2>
