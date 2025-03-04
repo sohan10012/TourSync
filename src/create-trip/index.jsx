@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 import { AI_PROMPT, SelectBudgetOptions } from "@/constants/options";
