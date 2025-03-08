@@ -147,7 +147,7 @@ function Header() {
                   <Navigation className="h-16 w-16 text-indigo-600" />
                 </div>
                 <h2 className="font-bold text-2xl mb-3 text-gray-800">Welcome to TourSync</h2>
-                <p className="text-center text-gray-600 mb-6">Sign in to access AI-powered trip synchronization and personalized travel recommendations</p>
+                <p className="text-center text-gray-600 mb-6">Sign in to access AI-powered trip sync and get history of your trips</p>
                 <Button
                   onClick={login}
                   className="w-full text-lg h-auto py-3 mt-2 flex gap-3 items-center justify-center cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white transition-colors"
